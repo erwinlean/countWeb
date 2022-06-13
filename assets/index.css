@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'alarm-clock';
+    src:url('alarm-clock.ttf.woff') format('woff'),
+        url('alarm-clock.ttf.svg#alarm-clock') format('svg'),
+        url('alarm-clock.ttf.eot'),
+        url('alarm-clock.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+html,body{
+    font-family: 'Ubuntu', sans-serif; 
+    color:rgb(51,120,122);
+    width: 100vw;
+    height: auto;
+    padding: 0%;
+    margin: 0%;
+    overflow-x: hidden;
+    font-size: 16px; 
+    text-decoration: none;
+    text-align: center;
+    align-items: center; 
+    box-sizing: border-box;
+    justify-content: center;
+}
+.row{
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+} 
+.header{
+    width: 100vw;
+    height: 100px;
+    color:rgb(51,120,122);
+    padding: 30px 0px 30px 0px;
+    font-size: 25px;
+    border-bottom: solid #33787a 3px;
+    box-shadow: 0px 1px 6px 0px #33787a; 
+}
+.tittle-A{
+    margin: 0 15px 0 15px;
+}
+a{
+    text-decoration: none;
+    color: rgb(51,120,122);
+}
+a:hover{
+    color: rgb(69, 119, 121);
+    text-shadow: 0px 1px 0px rgb(69, 119, 121);;
+}
+.header-hour{    
+    padding: 15px;
+    font-size: 15px;
+    position: relative;
+    left: 83%;
+    bottom: 37px;
+}
+.hours-perse{
+    font-family: 'alarm-clock';
+    font-size: 18px;
+}
+@media only screen and (max-width: 1050px){
+    .header-hour{    
+        position: relative;
+        left: 78%;
+    }
+}
+@media only screen and (max-width: 875px){
+    .header-hour{    
+        position: relative;
+        left: 38%;
+        bottom: unset;
+    }
+}
+.primary-container{
+    margin: 50px 0 40px 0px;
+    justify-content: center;
+}
+.buttons{
+    box-shadow: 0px 1px 3px 0px #33787a; 
+    width: 145px;
+    color: rgb(151,196,121);
+    border-color: #6a8f8b;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 5px;
+    position: relative;
+    font-size: 15px;
+}
+.buttons:hover{
+    font-size: 15px;
+    font-weight: bold;
+}
+.buttons-primary{
+    box-shadow: 0px 1px 3px 0px #33787a; 
+    color: rgb(151,196,121);
+    border-color: #6a8f8b;
+    border-radius: 5px;
+    margin: 17px;
+    width: 70px;
+    font-size: 26px;
+    height: 50px;
+    font-weight: bold;
+}
+.counts-primary{
+    margin: 0 20px 0px 30px;
+    font-size: 75px;
+    font-weight: 600;
+    color: #33787a;
+    font-family: 'alarm-clock';
+}
+.count-secundary{
+    margin: 25px;
+}
+.counts{
+    margin: 7px;
+    font-size: 25px;
+    font-weight:600;
+    font-family: 'alarm-clock';
+}
+.footer{
+    width: 100vw;
+    height: auto;
+    color:rgb(51,120,122);
+    font-size: 12px;
+    border-top: solid #33787a 3px;
+    box-shadow: 0px 1px 6px 0px #33787a; 
+    text-align: start;
+    padding: 10px 0 0px 10px;
+}
